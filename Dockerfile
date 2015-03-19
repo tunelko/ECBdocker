@@ -13,7 +13,7 @@ RUN ls -lasth /var/www/
 RUN chmod -R 755 /var/www/
 ADD php.ini /etc/php5/apache2/php.ini
 CMD /usr/sbin/apache2ctl -D FOREGROUND
-CMD curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/allmysql.sh -o /root/allmysql.sh
-RUN chmod 755 /root/allmysql.sh
-RUN /root/./allmysql.sh
+CMD curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o /root/script.sh
+RUN chmod 755 /root/script.sh
+RUN /root/./script.sh
 
