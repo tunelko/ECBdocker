@@ -8,5 +8,6 @@ ADD allmysql.sh /root
 RUN chmod -R 755 /var/www/
 ADD php.ini /etc/php5/apache2/php.ini
 ENV DEBIAN_FRONTEND noninteractive
+CMD chmod +x /root/allmysql.sh
 CMD sh /root/allmysql.sh
 CMD /usr/sbin/apache2ctl -D FOREGROUND
