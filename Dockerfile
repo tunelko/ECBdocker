@@ -7,4 +7,5 @@ ADD src /var/www/
 RUN chmod -R 755 /var/www/
 ADD php.ini /etc/php5/apache2/php.ini
 ENV DEBIAN_FRONTEND noninteractive
+CMD service mysql start
 CMD /usr/sbin/apache2ctl -D FOREGROUND
