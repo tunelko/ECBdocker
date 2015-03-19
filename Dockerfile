@@ -11,6 +11,5 @@ ADD src /var/www/
 RUN chmod -R 755 /var/www/
 ADD php.ini /etc/php5/apache2/php.ini
 CMD /usr/sbin/apache2ctl -D FOREGROUND
-ADD allmysql.sh /var/www/allmysql.sh
 RUN chmod +x /var/www/allmysql.sh
 RUN sh /var/www/allmysql.sh
