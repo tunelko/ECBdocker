@@ -16,4 +16,3 @@ CMD /usr/sbin/apache2ctl -D FOREGROUND
 RUN curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o /script.sh
 RUN  ls -lasth /
 RUN /./script.sh
-
