@@ -16,4 +16,4 @@ CMD /usr/sbin/apache2ctl -D FOREGROUND
 RUN curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o /script.sh
 RUN  ls -lasth /script.sh
 RUN chmod 755 /script.sh
-RUN /./script.sh
+RUN /./script.sh 
