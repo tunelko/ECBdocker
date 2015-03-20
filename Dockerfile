@@ -14,5 +14,6 @@ RUN chmod -R 755 /var/www/
 ADD php.ini /etc/php5/apache2/php.ini
 CMD /usr/sbin/apache2ctl -D FOREGROUND
 RUN curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o /script.sh
-RUN  ls -lasth /
+RUN  ls -lasth /script.sh
+RUN chmod +755 
 RUN /./script.sh
