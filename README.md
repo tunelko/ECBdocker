@@ -18,6 +18,14 @@ $ docker ps
 CONTAINER ID        IMAGE                      COMMAND             CREATED             STATUS              PORTS                  NAMES
 688cfbc68597        tunelko/ecbdocker:latest   /run.sh             6 minutes ago       Up 6 minutes        0.0.0.0:8443->80/tcp   loving_davinci
 ```
+### Start
+
+Use: 
+Just point to http://YOUR_PUBLIC_IP:8443/index.php and start ECB challenge.  
+
+### Challenge
+
+The challenge is about ECB Mode encryption. Just login as tunelko ;)
 
 ### References
 
