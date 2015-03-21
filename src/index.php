@@ -19,7 +19,7 @@
 	<p>And your cookie in plaintext is: <strong><?php echo $plaintext; ?> </strong>
   <?php } else { ?>
 
-      <p>Are you registered? If not, you can <a href="/ecb/register.php">register</a> here.</p>
+      <p>Are you registered? If not, you can <a href="register.php">register</a> here.</p>
       <p>Yes? Ok , try to <a href="login.php">login</a></p>
   <?php } ?>
       <p>This challenge is about ECB encryption. Read <a href="http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29">about it</a>. </p>

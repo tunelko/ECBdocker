@@ -26,6 +26,7 @@ RUN chmod 755 /*.sh
 # config to enable .htaccess
 ADD apache_default /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
+# Need to activate mcrypt php module.  
 RUN php5enmod mcrypt
 
 # Configure /app folder with sample app
