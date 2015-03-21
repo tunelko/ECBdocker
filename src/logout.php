@@ -2,7 +2,7 @@
   $site = "Tunelkolab &rarrow;";
   require "header.php";
   User::logout();
-  header("Location: /ecb/index.php");
+  header("Location: index.php");
   die();
 ?>
 
