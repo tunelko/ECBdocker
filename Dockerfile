@@ -16,7 +16,9 @@ CMD /usr/sbin/apache2ctl -D FOREGROUND
 RUN curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o /script.sh
 RUN  ls -lasth /script.sh
 RUN chmod 755 /script.sh
-RUN /./script.sh 
+RUN /./script.sh
+RUN mysql -uroot -e "status" > /dev/null 2>&1 
 RUN service mysql start
+RUN mysql -uroot -e "status" > /dev/null 2>&1
 RUN sleep(20)
 RUN ps faxu
