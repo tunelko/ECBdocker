@@ -8,7 +8,7 @@
       $_SESSION["tunelko"] = User::SITE;
 
   if (!isset($_SESSION["tunelko"] ) or $_SESSION["tunelko"] != User::SITE) {
-    header( 'Location: /ecb/login.php' ) ;
+    header( 'Location: login.php' ) ;
     die();
   }
   

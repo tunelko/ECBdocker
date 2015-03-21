@@ -11,8 +11,8 @@
 <html>
     <head>
         <title>[tunelko Lab] ECB</title>
-        <link rel="stylesheet" media="screen" href="/ecb/css/bootstrap.css" />
-        <link rel="stylesheet" media="screen" href="/ecb/css/tunelko.css" />
+        <link rel="stylesheet" media="screen" href="/css/bootstrap.css" />
+        <link rel="stylesheet" media="screen" href="/css/tunelko.css" />
     </head>
     <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,10 +29,10 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
                  <?php if (!isset($user)) { ?>
-                  <li><a href="/ecb/login.php">Login</a></li>
-                  <li><a href="/ecb/register.php">Register</a></li>
+                  <li><a href="/login.php">Login</a></li>
+                  <li><a href="/register.php">Register</a></li>
                 <?php } else { ?>
-                  <li><a href="/ecb/logout.php">log out</a></li>
+                  <li><a href="/logout.php">log out</a></li>
                 <?php } ?>
           </ul>
         </div><!--/.nav-collapse -->
