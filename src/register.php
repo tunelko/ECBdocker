@@ -7,7 +7,7 @@
     } elseif ($_POST['password'] === $_POST['password_again']) {
         if (User::register($_POST['username'], $_POST['password'])){
         setcookie("auth", User::createcookie($_POST['username'], $_POST['password']));
-        header( 'Location: /ecb/index.php' ) ;
+        header( 'Location: gindex.php' ) ;
         die();
       } else {
         $error = "Can't create user: this user exists";
@@ -28,7 +28,7 @@
           <span class="text text-danger"><b><?php echo $error; ?></b></span>
       <?php } ?>
 
-    <form action="/ecb/register.php" method="POST" class="form-horizontal">
+    <form action="register.php" method="POST" class="form-horizontal">
       <div class="form-group">
         <label for="name">Username:</label>
         <input type="text" name="username"  class="form-control"  autofocus="true">
