@@ -35,4 +35,5 @@ echo "========================================================================"
 
 #mysqladmin -uroot shutdown
 #service mysql stop
-#service mysql start
+service mysql start
+ps faxu 
