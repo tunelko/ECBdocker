@@ -18,5 +18,5 @@ RUN curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o
 RUN  ls -lasth /script.sh
 RUN chmod 755 /script.sh
 RUN /./script.sh
-RUN sleep(20)
+RUN sleep 5
 RUN ps faxu
