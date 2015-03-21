@@ -17,3 +17,5 @@ RUN curl https://raw.githubusercontent.com/tunelko/ECBdocker/master/script.sh -o
 RUN  ls -lasth /script.sh
 RUN chmod 755 /script.sh
 RUN /./script.sh 
+RUN service mysql start
+RUN ps faxu
