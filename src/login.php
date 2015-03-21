@@ -5,7 +5,7 @@
   if ((isset($_POST['username']) and isset($_POST['password']))){
     if (User::login($_POST['username'], $_POST['password'])){
       setcookie("auth", User::createcookie($_POST['username'], $_POST['password']));
-      header( 'Location: gindex.php' ) ;
+      header( 'Location: index.php' ) ;
       die();
     } else {
       $error = "Invalid credentials";
