@@ -20,7 +20,7 @@
   <?php } else { ?>
 
       <p>Are you registered? If not, you can <a href="/ecb/register.php">register</a> here.</p>
-      <p>Yes? Ok , try to <a href="/ecb/login.php">login</a></p>
+      <p>Yes? Ok , try to <a href="login.php">login</a></p>
   <?php } ?>
       <p>This challenge is about ECB encryption. Read <a href="http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29">about it</a>. </p>
       <p>The 'primary' objective of this challenge is to find a way to <strong>login as tunelko</strong>. </p>

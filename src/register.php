@@ -7,7 +7,7 @@
     } elseif ($_POST['password'] === $_POST['password_again']) {
         if (User::register($_POST['username'], $_POST['password'])){
         setcookie("auth", User::createcookie($_POST['username'], $_POST['password']));
-        header( 'Location: gindex.php' ) ;
+        header( 'Location: index.php' ) ;
         die();
       } else {
         $error = "Can't create user: this user exists";
