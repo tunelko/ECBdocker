@@ -15,7 +15,7 @@ echo "=> Creating MySQL admin user with ${_word} password"
 mysql -uroot -e "CREATE USER 'admin'@'%' IDENTIFIED BY '$PASS'"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION"
 echo "=> Creating MySQL DATABASE ecb"
-mysql -u admin -p$PASS < /var/www/database.sql
+mysql -u admin -p$PASS < /app/database.sql
 echo "=> Creating tunelko user for DATABASE ecb"
 mysql -uroot -e "CREATE USER 'tunelko'@'%' IDENTIFIED BY 'dhWuSEKR7LCgibBt'"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON ecb.* TO 'tunelko'@'%' WITH GRANT OPTION"
@@ -30,4 +30,4 @@ echo "Please remember to change the above password as soon as possible!"
 echo "MySQL user 'root' has no password but only allows local connections"
 echo "========================================================================"
 
-#mysqladmin -uroot shutdown
+mysqladmin -uroot shutdown
