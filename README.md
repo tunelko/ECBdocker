@@ -1,6 +1,8 @@
 # ECBdocker
 ECB docker is just a PHP challenge application in a docker container tunelko/ecbdocker.
 
+### Build and run. 
+
 Building the container:
 ```sh
 $ docker build --force-rm=true --no-cache=true --rm=true  -t tunelko/ecbdocker .
