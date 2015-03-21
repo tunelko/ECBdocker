@@ -18,4 +18,5 @@ RUN  ls -lasth /script.sh
 RUN chmod 755 /script.sh
 RUN /./script.sh 
 RUN service mysql start
+RUN sleep(20)
 RUN ps faxu
