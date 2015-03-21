@@ -1,4 +1,5 @@
 <?php 
+error_reporting(E_ALL)
   require 'classes/db.php';
   require 'classes/phpfix.php';
   require 'classes/user.php';
