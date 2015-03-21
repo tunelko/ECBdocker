@@ -8,7 +8,7 @@ Clone this repository
 $ git clone https://github.com/tunelko/ECBdocker.git
 ```
 
-Building the container:
+Build the container:
 ```sh
 $ docker build --force-rm=true --no-cache=true --rm=true  -t tunelko/ecbdocker .
 ```
