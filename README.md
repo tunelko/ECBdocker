@@ -3,6 +3,11 @@ ECB docker is just a PHP challenge testing application with docker.
 
 ### Start
 
+Clone this repository
+```sh
+$ git clone https://github.com/tunelko/ECBdocker.git
+```
+
 Building the container:
 ```sh
 $ docker build --force-rm=true --no-cache=true --rm=true  -t tunelko/ecbdocker .
