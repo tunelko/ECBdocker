@@ -65,6 +65,7 @@ function getPlainText($string, $passphrase){
     //die("invalid username/password");
   }
   function register($user, $password) {
+    $user=trim($user);
     if ($user === 'tunelko')
       return FALSE;
 
